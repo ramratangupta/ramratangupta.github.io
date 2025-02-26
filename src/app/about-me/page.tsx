@@ -24,7 +24,12 @@ export const metadata: Metadata = {
   },
 };
 
-const ExperienceHeader = (url : String,urlTitle:string,location:String,designation:String) => {
+const ExperienceHeader = (
+  url: string,
+  urlTitle: string,
+  location: string,
+  designation: string
+): React.ReactElement => {
   return (
     <>
       <h3>
@@ -78,7 +83,12 @@ export default function Home() {
                 </li>
               </ul>
               <h2>WORK EXPERIENCE</h2>
-              {ExperienceHeader("https://www.linkedin.com/company/knexus","Knexus","Gurugram (Remote), India | Jan 2022 – Feb 2025","Senior Lead Full Stack Engineer (Head of Development & DevOps)")}
+              {ExperienceHeader(
+                "https://www.linkedin.com/company/knexus",
+                "Knexus",
+                "Gurugram (Remote), India | Jan 2022 – Feb 2025",
+                "Senior Lead Full Stack Engineer (Head of Development & DevOps)"
+              )}
               <ul>
                 <li>
                   Developed and deployed scalable full-stack applications
@@ -135,13 +145,103 @@ export default function Home() {
                   management.
                 </li>
               </ul>
-              Knexus, Gurugram, India | Feb 2016 – Dec 2021 Lead Developer • Led
-              migrations - PHP7 to PHP8, Symfony2 to Symfony4, and Amazon Linux
-              1 to Amazon Linux 2. • Acted as a Product Owner for Experiences,
-              Audience, and Template; paired up for AWS with lead and worked on
-              GIT administration. • Defined improvement in UI/UX, and JIRA
-              (workflow automation, dashboard), resulting in a 10% increase in
-              team productivity.
+              {ExperienceHeader(
+                "https://www.linkedin.com/company/knexus",
+                "Knexus",
+                "Gurugram, India | Feb 2016 – Dec 2021",
+                "Lead Developer"
+              )}
+              <ul>
+                <li>
+                  Led migrations - PHP7 to PHP8, Symfony2 to Symfony4, and
+                  Amazon Linux 1 to Amazon Linux 2.
+                </li>
+                <li>
+                  Acted as a Product Owner for Experiences, Audience, and
+                  Template; paired up for AWS with lead and worked on GIT
+                  administration.
+                </li>
+                <li>
+                  Defined improvement in UI/UX, and JIRA (workflow automation,
+                  dashboard), resulting in a 10% increase in team productivity.
+                </li>
+              </ul>
+              {ExperienceHeader(
+                "https://www.linkedin.com/company/knexus",
+                "Knexus",
+                "Gurugram, India | Jun 2014 – Jan 2016",
+                "Senior Development Engineer"
+              )}
+              <ul>
+                <li>
+                  Implemented Facebook API integration, ensuring seamless social
+                  media connectivity and enhancing user engagement.
+                </li>
+                <li>
+                  Upgraded and streamlined the technology stack, including
+                  migrating PHP5 to PHP7, and upgrading ReactJS 13.
+                </li>
+                <li>
+                  Migrated from an in-house MVC framework to Symfony 2,
+                  improving Bootstrap UI, and enhancing code quality through
+                  optimization and peer programming.
+                </li>
+              </ul>
+              {ExperienceHeader(
+                "https://www.linkedin.com/company/digitasin/",
+                "DigitasLBi",
+                "Gurugram, India | Jun 2012 – May 2014",
+                "Software Developer"
+              )}
+              <ul>
+                <li>
+                  Delivered 30+ projects, including Websites, Facebook
+                  applications, admin panels, and API integrations (Facebook,
+                  Twitter, LinkedIn, and YouTube) using PHP and jQuery, with
+                  completion timelines ranging from 3 to 15 days.
+                </li>
+                <li>
+                  {" "}
+                  Key Projects Undertaken:{" "}
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1mFxAYI1lDFebOQKUWHVvAR8u8szmpL4utYSSnRPcgvU/edit?gid=0#gid=0"
+                    target="_blank"
+                  >
+                    Project Annexure
+                  </a>
+                  .
+                </li>
+              </ul>
+              {ExperienceHeader(
+                "https://www.linkedin.com/company/alethia-education-services/about/",
+                "Alethia Education Services",
+                "Gurugram, India | Dec 2009 – Jun 2012",
+                "IT Executive"
+              )}
+              <ul>
+                <li>
+                  Launched a website, email campaigns, and an employee
+                  attendance system using PHP and MySQL.
+                </li>
+                <li>
+                  Integrated PHPList with AWS SES, enabling the delivery of
+                  100,000 emails daily, and implemented a lead management system
+                  for improved customer engagement.
+                </li>
+                <li>Created website for Square Education Private Limited.</li>
+                <li>
+                  Created website for Shiv Khera Institute of Leadership And
+                  Management.
+                </li>
+                <li>
+                  Created website for Succession Planers for S. S. Nathyal, ex
+                  VP of J&K Bank.
+                </li>
+                <li>
+                  akgim.edu.in : Website redesign for some pages to capture
+                  online leads, mailer campaign and landing page development.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
