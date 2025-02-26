@@ -48,10 +48,10 @@ export default function Home() {
       <section id="about" className="about section">
         <div className="container">
           <div className="row ">
-            <div className="col-lg-4 col-md-5 col-xs-6">
+            <div className="col-lg-5 col-md-6 col-xs-6">
               <Skills />
             </div>
-            <div className="col-lg-8 col-md-7 col-xs-6">
+            <div className="col-lg-7 col-md-6 col-xs-6">
               <h1>About Me</h1>
               <ul>
                 {INTO}

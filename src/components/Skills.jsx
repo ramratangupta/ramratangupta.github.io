@@ -84,10 +84,10 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-12">
+    <section id="skills" className="py-12 row">
       <h2 className="text-3xl font-bold mb-8">Skills</h2>
       {Object.entries(skills).map(([category, skillList]) => (
-        <div key={category}>
+        <div className="col-lg-6" key={category}>
           <h3 className="text-xl font-semibold mb-2">{category}</h3>
           <ul className="list-group">
             {skillList.map((skill) => (
