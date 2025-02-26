@@ -1,6 +1,6 @@
 "use client"; // Important for Next.js 13+ client components
 import { useEffect, useState } from "react";
-import { SITE_CONFIG, SOCIAL_LINKS } from "@/constants";
+import { SOCIAL_LINKS } from "@/constants";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -35,21 +35,29 @@ const Footer = () => {
         <div className="container footer-top">
           <div className="row gy-4">
             <div className="col footer-about">
-              <a href="index.html" className="logo d-flex align-items-center">
-                <span className="sitename">{SITE_CONFIG.NAME}</span>
-              </a>
               <div className="footer-contact pt-3">
-               
                 <p className="mt-3">
-                  <b>Mobile:</b>{" "}
+                  <b>
+                    <i className="bi bi-phone"></i> Mobile:
+                  </b>{" "}
                   <a href={`tel:+91${SOCIAL_LINKS.CONTACT.PHONE}`}>
                     +91 {SOCIAL_LINKS.CONTACT.PHONE}
                   </a>
                 </p>
                 <p>
-                  <strong>Email:</strong>{" "}
+                  <strong>
+                    <i className="bi bi-envelope-at"></i> Email:
+                  </strong>{" "}
                   <a href={`mailto:${SOCIAL_LINKS.CONTACT.EMAIL}`}>
                     {SOCIAL_LINKS.CONTACT.EMAIL}
+                  </a>
+                </p>
+                <p>
+                  <strong>
+                    <i className="bi bi-file-earmark-person"></i> Resume:
+                  </strong>{" "}
+                  <a href="/Ramratn_Gupta.pdf" target="_blank">
+                    Download Resume
                   </a>
                 </p>
               </div>
@@ -59,17 +67,21 @@ const Footer = () => {
                 >
                   <i className="bi bi-whatsapp"></i>
                 </a>
+                <a href={SOCIAL_LINKS.LINKEDIN} target="_blank">
+                  <i className="bi bi-linkedin"></i>
+                </a>
+                <a href={SOCIAL_LINKS.X} target="_blank">
+                  <i className="bi bi-twitter-x"></i>
+                </a>
+                <a href={SOCIAL_LINKS.X} target="_blank">
+                  <i className="bi bi-stack-overflow"></i>
+                </a>
+                <a href={SOCIAL_LINKS.GITHUB} target="_blank">
+                  <i className="bi bi-github"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="container copyright text-center mt-4">
-          <p>
-            © <span>Copyright</span>
-            <strong className="px-1 sitename">{SITE_CONFIG.NAME}</strong>
-            <span>All Rights Reserved</span>
-          </p>
         </div>
       </footer>
       <a
