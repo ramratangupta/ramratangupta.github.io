@@ -30,10 +30,10 @@ const Navigation = () => {
             
             <li>
               <Link onClick={closeMobileNav}
-                href="/contact-us/"
-                className={pathname == "/contact-us/" ? "active" : ""}
+                href="/about-me/"
+                className={pathname == "/about-me/" ? "active" : ""}
               >
-                Contact Us
+                About Me
               </Link>
             </li>
           </ul>

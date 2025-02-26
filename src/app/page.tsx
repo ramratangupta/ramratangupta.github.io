@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants";
+import {INTO} from "@/components/Into"
 const description = "";
 export const metadata: Metadata = {
   title: SITE_CONFIG.NAME,
@@ -38,37 +39,7 @@ export default function Home() {
                 Senior Lead Full Stack Engineer (Head of Development & DevOps)
               </h3>
               <ul>
-                <li>
-                  Full Stack Software Engineer with 15+ years of experience in
-                  Full Stack Development, AWS Services, Project Execution,
-                  Migrations, Operations, and Client Engagement.
-                </li>
-                <li>
-                  Proficient in front-end and back-end development with
-                  expertise in technologies: ReactJS, NodeJS, Python, GenAI,
-                  AI/ML, PHP, Symfony, JavaScript, HTML, CSS, and database
-                  systems & cloud-based architectures.
-                </li>
-                <li>
-                  Expertise in modern frameworks and cloud platforms & applying
-                  cutting-edge practices (AI/ML) to enhance product performance,
-                  security & compliance, and client satisfaction.
-                </li>
-                <li>
-                  Collaborated across the full Software Development Life cycle
-                  (SDLC), covering business requirement mapping, application
-                  design & development, integration, testing, and
-                  troubleshooting.
-                </li>
-                <li>
-                  Rich exposure in hiring, coaching, mentoring new developers,
-                  and conducting code reviews, while driving a culture of
-                  continuous improvement.
-                </li>
-                <li>
-                  Enhanced project efficiency through Agile methodologies, and
-                  Scrum ceremonies such as Daily Scrums and Sprint Planning.
-                </li>
+                {INTO}
               </ul>
               <div className="embed-responsive embed-responsive-4by3">
                 <iframe
