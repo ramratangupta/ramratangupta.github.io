@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { SITE_CONFIG,SOCIAL_LINKS} from '@/constants';
+import { SOCIAL_LINKS} from '@/constants';
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const pathname = usePathname();

@@ -26,7 +26,7 @@ export default function Home() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-2">
-              <img src="/Ramratn_Gupta.png" className="rounded-circle w-100" />
+              <img src="/Ramratn_Gupta.png" className="rounded-circle w-100" alt="Ramratan Gupta"/>
             </div>
             <div className="col-lg-10">
               <h1>Ramratan Gupta</h1>
