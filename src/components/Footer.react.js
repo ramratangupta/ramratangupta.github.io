@@ -56,7 +56,7 @@ const Footer = () => {
                   <strong>
                     <i className="bi bi-file-earmark-person"></i> Resume:
                   </strong>{" "}
-                  <a href="/Ramratn_Gupta.pdf" target="_blank">
+                  <a href="/Ramratan_Gupta.pdf" target="_blank">
                     Download Resume
                   </a>
                 </p>
