@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants";
 import {INTO} from "@/components/Into"
-const description = "";
 export const metadata: Metadata = {
   title: SITE_CONFIG.NAME,
-  description: description,
-  keywords: "",
+  description: SITE_CONFIG.Description,
+  keywords: "Ramratan Gupta Video self intoduction,"+SITE_CONFIG.KeyWords,
+  metadataBase: new URL(SITE_CONFIG.URL), // Add this line
+  alternates: {
+    canonical: '/', // Add this line
+  },
   openGraph: {
     title: SITE_CONFIG.NAME,
-    description: description,
+    description: SITE_CONFIG.Description,
     url: SITE_CONFIG.URL, // Replace with your actual URL
     siteName: SITE_CONFIG.NAME,
     images: [

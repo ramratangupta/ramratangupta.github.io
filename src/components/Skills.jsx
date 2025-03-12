@@ -29,6 +29,13 @@ import {
   SiAwslambdaHex,
   SiAmazonsqs,
   SiAmazonsqsHex,
+  SiAmazons3,
+  SiAmazons3Hex,
+  SiAmazoniam,
+  SiAmazoniamHex,
+  SiGooglegemini,
+  SiGooglegeminiHex
+  
 } from "@icons-pack/react-simple-icons";
 import * as Icons from "@/components/Icons";
 const skills = {
@@ -79,7 +86,21 @@ const skills = {
       name: "SNS - Simple Notification Service",
       icon: <Icons.SNS />,
     },
+    {
+      name: "S3 - Simple Storage Service",
+      icon: <SiAmazons3 color={SiAmazons3Hex} />,
+    },
+    {
+      name: "IAM - Identity and Access Management",
+      icon: <SiAmazoniam color={SiAmazoniamHex} />,
+    },
   ],
+  AI:[
+    {
+      name: "Google Gemini",
+      icon: <SiGooglegemini color={SiGooglegeminiHex} />,
+    }
+  ]
 };
 
 const Skills = () => {
@@ -103,3 +124,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+{/*AI: ["GenAI", "AmazonQ", "Gemini", "Prompt Engineering"]*/}

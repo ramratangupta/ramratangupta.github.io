@@ -3,15 +3,17 @@ import { SITE_CONFIG } from "@/constants";
 import { INTO } from "@/components/Into";
 import Skills from "@/components/Skills";
 const title = SITE_CONFIG.NAME + " : About me";
-const description = "";
 export const metadata: Metadata = {
   title: title,
-  description: description,
-  keywords: "",
+  description: SITE_CONFIG.Description,
+  keywords: "Ramratan Gupta Visual Resume,"+SITE_CONFIG.KeyWords,
+  alternates: {
+    canonical: '/about-me/', // Add this line
+  },
   openGraph: {
     title: title,
-    description: description,
-    url: SITE_CONFIG.URL + "/contact-us/",
+    description: SITE_CONFIG.Description,
+    url: SITE_CONFIG.URL + "/about-me/",
     siteName: title,
     type: "website",
     images: [
