@@ -24,21 +24,33 @@ export const metadata: Metadata = {
   },
 };
 
-const ExperienceHeader = (
+const commpanyLogo = (
   url: string,
   urlTitle: string,
-  location: string,
-  designation: string
+  image: string,
+  linkedIn?: string
 ): React.ReactElement => {
+  if (url == "" && linkedIn != undefined && linkedIn != "") {
+    url = linkedIn;
+    linkedIn = undefined;
+  }
   return (
     <>
-      <h3>
-        <a href={url} target="_blank">
-          {urlTitle}
+      <a href={url} target="_blank">
+        <img src={image} className="projects_logo" />
+        <br />
+        {urlTitle}{" "}
+      </a>
+      {linkedIn != undefined ? (
+        <a href={linkedIn} target="_blank">
+          <i className="bi bi-linkedin"></i>
         </a>
-        , {location}
-      </h3>
-      <h4>{designation}</h4>
+      ) : null}{" "}
+      {url != "" && linkedIn != undefined ? (
+        <a href={url} target="_blank">
+          <i className="bi bi-globe"></i>
+        </a>
+      ) : null}
     </>
   );
 };
@@ -50,6 +62,28 @@ export default function Home() {
           <div className="row ">
             <div className="col">
               <h1>Projects</h1>
+            </div>
+          </div>
+          <div className="row ">
+            <div className="col-2">
+              {commpanyLogo(
+                "https://www.knexusai.com/",
+                "Knexus",
+                "https://d3qy1pxzcopg5z.cloudfront.net/wp-content/uploads/2021/01/15112406/knexus-full-000-3-01.png",
+                "https://www.linkedin.com/company/knexus/"
+              )}
+            </div>
+            <div className="col-10">
+              <div className="row ">
+                <div className="col-3"><h3 className="text-xl font-semibold mb-2">Project Title</h3></div>
+                <div className="col-3"><h3 className="text-xl font-semibold mb-2">Skills</h3></div>
+                <div className="col-6"><h3 className="text-xl font-semibold mb-2">Project Decription</h3></div>
+              </div>
+              <div className="row ">
+                <div className="col-3"><h4 className="text-xl font-semibold mb-2">Experiences</h4></div>
+                <div className="col-3"></div>
+                <div className="col-6"></div>
+              </div>
             </div>
           </div>
         </div>
