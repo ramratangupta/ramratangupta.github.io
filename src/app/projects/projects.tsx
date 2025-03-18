@@ -102,14 +102,26 @@ const projectsList: Company[] = [
                 After create / edit twig render was running in batches, for
                 selected content template for all content.
               </li>
-              <li>Each template save are updated in preiew colum of template and preview colum of conten was updated.</li>
-              <li>After each save new template version created, user can revert the from version or revert from live version</li>
+              <li>
+                Each template save are updated in preiew colum of template and
+                preview colum of conten was updated.
+              </li>
+              <li>
+                After each save new template version created, user can revert
+                the from version or revert from live version
+              </li>
               <li>
                 CSS and JS were not part of twig template to reduce size of
                 render code.
               </li>
-              <li>When there was a content edit / create operations, all templates for that content type render was created.</li>
-              <li>User can update CLS Requirements for Google Web Vitals CLS metrics</li>
+              <li>
+                When there was a content edit / create operations, all templates
+                for that content type render was created.
+              </li>
+              <li>
+                User can update CLS Requirements for Google Web Vitals CLS
+                metrics
+              </li>
             </ol>
           </>
         ),
