@@ -27,7 +27,8 @@ const projectsList: Company[] = [
       {
         img: "",
         project_title: "Experiences",
-        skills: "ReactJS, PHP Symfony, MYSql, AWS, Redis, SQS, S3",
+        skills:
+          "ReactJS, PHP, Symfony, MySql, AWS, Redis, SQS, S3, Worker, CRON",
         resource: "6m94px6o4uQ",
         type: "yt",
         description: (
@@ -81,13 +82,69 @@ const projectsList: Company[] = [
       },
       {
         img: "",
+        project_title: "Templates",
+        skills: "Redis, PHP, CRON, S3, SES",
+        resource: "1M0W-r_jIIo",
+        type: "yt",
+        role: "Product Owner",
+        description: (
+          <>
+            Templates was the core of widget delivery.
+            <ol>
+              <li>User can list the templates, search template.</li>
+              <li>
+                User can send approval for design changes. Another User can
+                approve the changes. Approved template can be published. After
+                Template publish redis cache of widget cleared.
+              </li>
+              <li>From the UI user can create template using twig template.</li>
+              <li>
+                After create / edit twig render was running in batches, for
+                selected content template for all content.
+              </li>
+              <li>Each template save are updated in preiew colum of template and preview colum of conten was updated.</li>
+              <li>After each save new template version created, user can revert the from version or revert from live version</li>
+              <li>
+                CSS and JS were not part of twig template to reduce size of
+                render code.
+              </li>
+              <li>When there was a content edit / create operations, all templates for that content type render was created.</li>
+              <li>User can update CLS Requirements for Google Web Vitals CLS metrics</li>
+            </ol>
+          </>
+        ),
+        responsibility:
+          "My role was to create technincal solution, create CRON, do front end and backend, also mentor team members for deligation of works.",
+      },
+      {
+        img: "",
         project_title: "ETL Job Processor for CouchDB",
-        skills: "NodeJS, MySQL, Couch DB",
+        skills: "NodeJS, MySQL, Couch DB, ETL",
         resource: "",
         type: "",
         description:
           "I designed the solution for near real-time analytic data aggregation. The solution was to read data from MySQL and store it in CouchDB after its aggregation. Couch DB has documents and views for different dimensions. Each client has a different db prefix for the couch document.",
         role: "Technical Solution",
+        responsibility:
+          "My role was to review the solution development and provide feedback to the developer.",
+      },
+
+      {
+        img: "",
+        project_title: "ETL Job Processor for Analatic Capture",
+        skills: "Redis, DataLake, S3, ETL, CRON, Python",
+        resource: "",
+        type: "",
+        role: "Technical Solution",
+        description: (
+          <>
+            I designed the solution for Analatic Capture ETL job. A Cron reads
+            data from redis analtyic data and write in S3 every 30 min. Another
+            CRON Download files from S3, Process in batches of 8. Wait for all
+            processes to complete. The sub prcocess transform JSON data to MySql
+            insert query using Python mapper and reducer and store in S3.
+          </>
+        ),
         responsibility:
           "My role was to review the solution development and provide feedback to the developer.",
       },
@@ -106,7 +163,7 @@ const projectsList: Company[] = [
       {
         img: "",
         project_title: "CSS and JS Minification for Knexus AI",
-        skills: "Gulp and NodeJS",
+        skills: "Gulp, NodeJS",
         resource: "",
         type: "",
         description:
@@ -304,7 +361,7 @@ const projectsList: Company[] = [
       {
         resource: "",
         project_title: "Razorfish - Tweet A Salute",
-        skills: "PHP, MYSql, Twitter API, CRON",
+        skills: "PHP, MySql, Twitter API, CRON",
         img: "https://pbs.twimg.com/media/ByhfyGkCUAAlqmS?format=jpg&name=large",
         type: "image",
         description:
