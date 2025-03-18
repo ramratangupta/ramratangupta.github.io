@@ -29,6 +29,28 @@ import {
   SiAwslambdaHex,
   SiAmazonsqs,
   SiAmazonsqsHex,
+  SiAmazons3,
+  SiAmazons3Hex,
+  SiAmazoniam,
+  SiAmazoniamHex,
+  SiGooglegemini,
+  SiGooglegeminiHex,
+  SiAmazoncloudwatch,
+  SiAmazoncloudwatchHex,
+  SiAmazonroute53,
+  SiAmazonroute53Hex,
+  SiAmazonsimpleemailservice,
+  SiAmazonsimpleemailserviceHex,
+  SiMysql,
+  SiMysqlHex,
+  SiElasticsearch,
+  SiElasticsearchHex,
+  SiAmazondynamodb,
+  SiAmazondynamodbHex,
+  SiRedis,
+  SiRedisHex,
+  SiApachecouchdb,
+  SiApachecouchdbHex,
 } from "@icons-pack/react-simple-icons";
 import * as Icons from "@/components/Icons";
 const skills = {
@@ -40,11 +62,47 @@ const skills = {
     { name: "CSS", icon: <SiCss color={SiCssHex} /> },
     { name: "Bootstrap", icon: <SiBootstrap color={SiBootstrapHex} /> },
   ],
+
+  Databases: [
+    { name: "MySQL - AWS RDS", icon: <SiMysql color={SiMysqlHex} /> },
+    {
+      name: "Elastic Search - AWS Open Search",
+      icon: <SiElasticsearch color={SiElasticsearchHex} />,
+    },
+    {
+      name: "AWS Dynamo DB",
+      icon: <SiAmazondynamodb color={SiAmazondynamodbHex} />,
+    },
+    { name: "Redis", icon: <SiRedis color={SiRedisHex} /> },
+    { name: "Couch DB", icon: <SiApachecouchdb color={SiApachecouchdbHex} /> },
+  ],
   Backend: [
     { name: "NodeJS", icon: <SiNodedotjs color={SiNodedotjsHex} /> },
     { name: "PHP", icon: <SiPhp color={SiPhpHex} /> },
     { name: "Python", icon: <SiPython color={SiPythonHex} /> },
     { name: "Symfony", icon: <SiSymfony color={SiSymfonyHex} /> },
+  ],
+  AI: [
+    {
+      name: "Google Gemini",
+      icon: <SiGooglegemini color={SiGooglegeminiHex} />,
+    },
+    {
+      name: "Amazon Q",
+      icon: <Icons.AmazonQ />,
+    },
+    {
+      name: "GenAI",
+      icon: <></>,
+    },
+    {
+      name: "Prompt Engineering",
+      icon: <></>,
+    },
+    {
+      name: "Amazon Transcribe",
+      icon: <Icons.AmazonTranscribe />,
+    },
   ],
   Cloud: [
     {
@@ -72,12 +130,54 @@ const skills = {
       icon: <Icons.VPC />,
     },
     {
+      name: "AWS Route 53",
+      icon: <SiAmazonroute53 color={SiAmazonroute53Hex} />,
+    },
+    {
+      name: "Global Accelerator",
+      icon: <Icons.GlobalAccelerator />,
+    },
+    {
       name: "SQS - Simple Queue Service",
       icon: <SiAmazonsqs color={SiAmazonsqsHex} />,
     },
     {
       name: "SNS - Simple Notification Service",
       icon: <Icons.SNS />,
+    },
+    {
+      name: "SES - Simple Email Service",
+      icon: (
+        <SiAmazonsimpleemailservice color={SiAmazonsimpleemailserviceHex} />
+      ),
+    },
+    {
+      name: "Cloud Watch",
+      icon: <SiAmazoncloudwatch color={SiAmazoncloudwatchHex} />,
+    },
+    {
+      name: "Cloud Trail",
+      icon: <Icons.CloudTrail />,
+    },
+    {
+      name: "S3 - Simple Storage Service",
+      icon: <SiAmazons3 color={SiAmazons3Hex} />,
+    },
+    {
+      name: "CloudFront - CDN",
+      icon: <Icons.CloudFront />,
+    },
+    {
+      name: "IAM - Identity and Access Management",
+      icon: <SiAmazoniam color={SiAmazoniamHex} />,
+    },
+    {
+      name: "WAF - Web Application Firewall",
+      icon: <Icons.WAF />,
+    },
+    {
+      name: "AWS Inspector",
+      icon: <Icons.AWSInspector />,
     },
   ],
 };
