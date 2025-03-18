@@ -36,7 +36,6 @@ const commpanyLogo = (
 ): React.ReactElement => {
   if (url == "" && linkedIn != undefined && linkedIn != "") {
     url = linkedIn;
-    linkedIn = undefined;
   }
   return (
     <>
@@ -58,7 +57,7 @@ const commpanyLogo = (
             <i className="bi bi-linkedin"></i>
           </a>
         ) : null}{" "}
-        {url != "" && linkedIn != undefined ? (
+        {url != linkedIn && linkedIn != undefined ? (
           <a href={url} target="_blank">
             <i className="bi bi-globe"></i>
           </a>

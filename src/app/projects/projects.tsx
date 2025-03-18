@@ -698,5 +698,49 @@ const projectsList: Company[] = [
       },
     ],
   },
+  {
+    company_name: "Alethia Education Services",
+    url: "",
+    logo: "/alethia.jpeg",
+    linkedIn: "https://www.linkedin.com/company/alethia-education-services/",
+    projects: [
+      {
+        img: "",
+        project_title: "Alethia Education Website",
+        skills: "PHP, MySql, JavaScript, jQuery, AWS SES",
+        resource: "",
+        type: "",
+        description:
+          "Alethia Education Services website offered a range of courses/programs to the working professionals. User can view details for courses, fill enquiry form, enroll for coruces.",
+        role: "Developer",
+        responsibility:
+          "My role was to develop and manage two websites that streamlined operations. Send Email notification to after each form submisstion.",
+      },
+      {
+        img: "",
+        project_title: "Email newsletter design",
+        skills: "HTML, CSS",
+        resource: "",
+        type: "",
+        description:
+          "Alethia Education Services used Email newsletter to send course notifcations to targeted users sourced from diffrent data sources ie enquiry and data vendors",
+        role: "Developer",
+        responsibility:
+          "My role was to create HTML newsletter with proper CTA and enquiry forms for lead genration.",
+      },
+      {
+        img: "",
+        project_title: "Targeted email marketing campaigns",
+        skills: "HTML, CSS, PHPList, AWS SES",
+        resource: "",
+        type: "",
+        description:
+          "Alethia used Outlook, to send emails in bcc that was not working due to SPAM and it was not personlized. I migrated email sending to PHPList (installed on dedicated server) to send email using AWS SES.",
+        role: "Developer",
+        responsibility:
+          "I integrated PHPList with AWS SES, enabling the delivery of 100,000 emails daily, and implemented a lead management system for improved customer engagement. This include email bounce processing, setting up email campaign based on targeted users.",
+      },
+    ],
+  },
 ];
 export default projectsList;
