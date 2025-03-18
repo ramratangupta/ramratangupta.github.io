@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants";
 import { INTO } from "@/components/Into";
+import YTPlayer from "@/components/YTPlayer";
 export const metadata: Metadata = {
   title: SITE_CONFIG.NAME,
   description: SITE_CONFIG.Description,
@@ -30,13 +31,7 @@ export default function Home() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-6 col-md-6 col-xs-12">
-              <div className="embed-responsive embed-responsive-4by3">
-                <iframe
-                  className="embed-responsive-item  w-100"
-                  style={{ height: "400px" }}
-                  src="https://www.youtube.com/embed/3hYVO7z4RYc"
-                ></iframe>
-              </div>
+              {<YTPlayer ytID="3hYVO7z4RYc"/>}
             </div>
             <div className="col-lg-6 col-md-6 col-xs-12">
               <h1>Ramratan Gupta</h1>

@@ -749,9 +749,3 @@ section,
   font-family: var(--nav-font);
   text-transform: uppercase;
 }
-
-.projects_logo {
-  width: 119px;
-  height: 50px;
-  object-fit: contain;
-}

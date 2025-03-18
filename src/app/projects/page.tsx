@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants";
+import YTPlayer from "@/components/YTPlayer";
+import projects from "./projects";
+import Image from "next/image";
+import { Fragment } from "react";
 const title = SITE_CONFIG.NAME + " : Projects";
 export const metadata: Metadata = {
   title: title,
@@ -36,21 +40,30 @@ const commpanyLogo = (
   }
   return (
     <>
-      <a href={url} target="_blank">
-        <img src={image} className="projects_logo" />
-        <br />
-        {urlTitle}{" "}
-      </a>
-      {linkedIn != undefined ? (
-        <a href={linkedIn} target="_blank">
-          <i className="bi bi-linkedin"></i>
-        </a>
-      ) : null}{" "}
-      {url != "" && linkedIn != undefined ? (
+      <div className="col-lg-3 col-md-6 col-xs-12">
         <a href={url} target="_blank">
-          <i className="bi bi-globe"></i>
+          <Image
+            src={image}
+            className="object-fit-contain"
+            alt={`${urlTitle} logo`}
+            width={119}
+            height={50}
+          />
         </a>
-      ) : null}
+      </div>
+      <div className="col-lg-7 col-md-6 col-xs-12 my-auto">
+        <b>Compnay Name : {urlTitle}</b>{" "}
+        {linkedIn != undefined ? (
+          <a href={linkedIn} target="_blank">
+            <i className="bi bi-linkedin"></i>
+          </a>
+        ) : null}{" "}
+        {url != "" && linkedIn != undefined ? (
+          <a href={url} target="_blank">
+            <i className="bi bi-globe"></i>
+          </a>
+        ) : null}
+      </div>
     </>
   );
 };
@@ -59,33 +72,76 @@ export default function Home() {
     <main className="main">
       <section id="about" className="about section">
         <div className="container">
-          <div className="row ">
-            <div className="col">
-              <h1>Projects</h1>
-            </div>
-          </div>
-          <div className="row ">
-            <div className="col-2">
-              {commpanyLogo(
-                "https://www.knexusai.com/",
-                "Knexus",
-                "https://d3qy1pxzcopg5z.cloudfront.net/wp-content/uploads/2021/01/15112406/knexus-full-000-3-01.png",
-                "https://www.linkedin.com/company/knexus/"
-              )}
-            </div>
-            <div className="col-10">
-              <div className="row ">
-                <div className="col-3"><h3 className="text-xl font-semibold mb-2">Project Title</h3></div>
-                <div className="col-3"><h3 className="text-xl font-semibold mb-2">Skills</h3></div>
-                <div className="col-6"><h3 className="text-xl font-semibold mb-2">Project Decription</h3></div>
-              </div>
-              <div className="row ">
-                <div className="col-3"><h4 className="text-xl font-semibold mb-2">Experiences</h4></div>
-                <div className="col-3"></div>
-                <div className="col-6"></div>
-              </div>
-            </div>
-          </div>
+          {projects.map((company) => {
+            return (
+              <Fragment key={company.company_name}>
+                <div className="row bg-secondary-subtle py-1">
+                  {commpanyLogo(
+                    company.url,
+                    company.company_name,
+                    company.logo,
+                    company.linkedIn
+                  )}
+                </div>
+
+                {company.projects.map((project, i) => {
+                  return (
+                    <div
+                      className="row py-4  border-top"
+                      key={project.project_title}
+                    >
+                      <div className="col-lg-6 col-md-12 col-xs-12">
+                        <div className="row ">
+                          <div className="col-12">
+                            <b>
+                              Project {i + 1} : {project.project_title}
+                            </b>
+                          </div>
+                          <div className="col-12">
+                            <b>Skills:</b> {project.skills}
+                          </div>
+                          <div className="col-12">
+                            <b>Role:</b> {project.role}
+                          </div>
+                          <div className="col-12">
+                            <b>Responsibility:</b> {project.responsibility}
+                          </div>
+
+                          <div className="col-12">
+                            {project.type === "yt" && (
+                              <YTPlayer
+                                ytID={project.resource}
+                                height="300px"
+                              />
+                            )}
+                            {project.type === "embed" && (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: project.resource,
+                                }}
+                              />
+                            )}
+                            {project.type === "image" && project.img !== "" && (
+                              <Image
+                                src={project.img}
+                                alt={project.project_title}
+                                height={400}
+                                width={300}
+                                className="d-flex mx-auto img-fluid img-thumbnail"
+                              />
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-md-12 col-xs-12 my-auto">
+                        {project.description}
+                      </div>
+                    </div>
+                  );
+                })}
+              </Fragment>
+            );
+          })}
         </div>
       </section>
     </main>

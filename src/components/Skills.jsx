@@ -188,7 +188,7 @@ const Skills = () => {
       <h2 className="text-3xl font-bold mb-8">Skills</h2>
       {Object.entries(skills).map(([category, skillList]) => (
         <div className="col-lg-6" key={category}>
-          <h3 className="text-xl font-semibold mb-2">{category.replace("_","")}</h3>
+          <h3 className="text-xl font-semibold mb-2">{category}</h3>
           <ul className="list-group">
             {skillList.map((skill) => (
               <li className="list-group-item" key={skill.name}>
