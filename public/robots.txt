@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ramratangupta.github.io/
+Host: https://ramratangupta.github.io/
 
 # Sitemaps
-Sitemap: https://www.ramratangupta.github.io/sitemap.xml
+Sitemap: https://ramratangupta.github.io/sitemap.xml
