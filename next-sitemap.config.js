@@ -1,5 +1,5 @@
 const config = {
-  siteUrl: "https://www.ramratangupta.github.io/",
+  siteUrl: "https://ramratangupta.github.io/",
   generateRobotsTxt: true,
 };
 module.exports = config;
