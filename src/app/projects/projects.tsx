@@ -700,7 +700,7 @@ const projectsList: Company[] = [
   },
   {
     company_name: "Alethia Education Services",
-    url: "",
+    url: "https://www.alethiaeducation.in/",
     logo: "/alethia.jpeg",
     linkedIn: "https://www.linkedin.com/company/alethia-education-services/",
     projects: [

@@ -113,12 +113,7 @@ export default function Home() {
                                 height="300px"
                               />
                             )}
-                            {project.type === "embed" && (
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: project.resource,
-                                }}
-                              />
+                            {project.type === "embed" && (project.resource
                             )}
                             {project.type === "image" && project.img !== "" && (
                               <Image
@@ -133,6 +128,9 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12 col-xs-12 my-auto">
+                        <div>
+                          <b>Project Description:</b>
+                        </div>
                         {project.description}
                       </div>
                     </div>
