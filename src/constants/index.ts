@@ -10,6 +10,7 @@ export const SOCIAL_LINKS = {
   X: "https://x.com/ramratangupta",
   STACKOVERFLOW: "https://stackoverflow.com/users/1589444/ramratan-gupta",
   LINKEDIN: "https://www.linkedin.com/in/ramratangupta",
+  LEETCODE:"https://leetcode.com/u/ramratangupta/",
   CONTACT: {
     EMAIL: "ramratan.gupta@gmail.com",
     PHONE: "9313583357",

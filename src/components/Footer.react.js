@@ -63,21 +63,24 @@ const Footer = () => {
               </div>
               <div className="social-links d-flex mt-4">
                 <a
-                  href={`https://wa.me/91${SOCIAL_LINKS.CONTACT.PHONE}?text=Hi`}
+                  href={`https://wa.me/91${SOCIAL_LINKS.CONTACT.PHONE}?text=Hi`} title="WhatsApp"
                 >
                   <i className="bi bi-whatsapp"></i>
                 </a>
-                <a href={SOCIAL_LINKS.LINKEDIN} target="_blank">
+                <a href={SOCIAL_LINKS.LINKEDIN} target="_blank" title="LinkedIn">
                   <i className="bi bi-linkedin"></i>
                 </a>
-                <a href={SOCIAL_LINKS.X} target="_blank">
+                <a href={SOCIAL_LINKS.X} target="_blank" title="X">
                   <i className="bi bi-twitter-x"></i>
                 </a>
-                <a href={SOCIAL_LINKS.X} target="_blank">
+                <a href={SOCIAL_LINKS.X} target="_blank" title="Stack Overflow">
                   <i className="bi bi-stack-overflow"></i>
                 </a>
-                <a href={SOCIAL_LINKS.GITHUB} target="_blank">
+                <a href={SOCIAL_LINKS.GITHUB} target="_blank" title="Github">
                   <i className="bi bi-github"></i>
+                </a>
+                <a href={SOCIAL_LINKS.LEETCODE} target="_blank" title="Leetcode">
+                  <img src="https://img.icons8.com/?size=20&id=9L16NypUzu38&format=png&color=000000"/>
                 </a>
               </div>
             </div>
