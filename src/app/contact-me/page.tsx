@@ -25,24 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-const ExperienceHeader = (
-  url: string,
-  urlTitle: string,
-  location: string,
-  designation: string
-): React.ReactElement => {
-  return (
-    <>
-      <h3>
-        <a href={url} target="_blank">
-          {urlTitle}
-        </a>
-        , {location}
-      </h3>
-      <h4>{designation}</h4>
-    </>
-  );
-};
 export default function Home() {
   return (
     <main className="main">
