@@ -50,6 +50,15 @@ const Navigation = () => {
                 Projects
               </Link>
             </li>
+            <li>
+              <Link
+                onClick={closeMobileNav}
+                href="/contact-me/"
+                className={pathname == "/contact-me/" ? "active" : ""}
+              >
+                Scan QR Code
+              </Link>
+            </li>
           </ul>
           <i
             className={`mobile-nav-toggle d-xl-none bi ${

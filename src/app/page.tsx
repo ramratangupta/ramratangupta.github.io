@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/constants";
 import { INTO } from "@/components/Into";
 import YTPlayer from "@/components/YTPlayer";
+import Image from "next/image";
 export const metadata: Metadata = {
   title: SITE_CONFIG.NAME,
   description: SITE_CONFIG.Description,
@@ -31,7 +32,7 @@ export default function Home() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-6 col-md-6 col-xs-12">
-              {<YTPlayer ytID="3hYVO7z4RYc"/>}
+              {<YTPlayer ytID="3hYVO7z4RYc" />}
             </div>
             <div className="col-lg-6 col-md-6 col-xs-12">
               <h1>Ramratan Gupta</h1>
@@ -39,6 +40,16 @@ export default function Home() {
                 Senior Lead Full Stack Engineer (Head of Development & DevOps)
               </h3>
               <ul>{INTO}</ul>
+              <h4>
+                Scan QR code to download vCard
+              </h4>
+              <Image
+                src="/qr-code.svg"
+                alt="QR Code"
+                layout="responsive"
+                width={400} 
+                height={400} 
+              />
             </div>
           </div>
         </div>
