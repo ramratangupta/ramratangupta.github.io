@@ -53,7 +53,7 @@ import {
   SiApachecouchdbHex,
 } from "@icons-pack/react-simple-icons";
 import * as Icons from "@/components/Icons";
-const skills = {
+export const skills = {
   Frontend: [
     { name: "ReactJS", icon: <SiReact color={SiReactHex} /> },
     { name: "NextJS", icon: <SiNextdotjs color={SiNextdotjsHex} /> },
@@ -93,11 +93,11 @@ const skills = {
     },
     {
       name: "GenAI",
-      icon: <></>,
+      icon: null,
     },
     {
       name: "Prompt Engineering",
-      icon: <></>,
+      icon: null,
     },
     {
       name: "Amazon Transcribe",
