@@ -6,9 +6,9 @@ const title = SITE_CONFIG.NAME + " : About me";
 export const metadata: Metadata = {
   title: title,
   description: SITE_CONFIG.Description,
-  keywords: "Ramratan Gupta Visual Resume,"+SITE_CONFIG.KeyWords,
+  keywords: "Ramratan Gupta Visual Resume," + SITE_CONFIG.KeyWords,
   alternates: {
-    canonical: '/about-me/', // Add this line
+    canonical: "/about-me/", // Add this line
   },
   openGraph: {
     title: title,
@@ -30,7 +30,7 @@ const ExperienceHeader = (
   url: string,
   urlTitle: string,
   location: string,
-  designation: string
+  designation: string,
 ): React.ReactElement => {
   return (
     <>
@@ -86,10 +86,50 @@ export default function Home() {
               </ul>
               <h2>WORK EXPERIENCE</h2>
               {ExperienceHeader(
+                "https://intraedge.com/",
+                "IntraEdge (Client: American Express)",
+                "Bengaluru, India | Apr 2025 – Current",
+                "Senior Software Developer - II",
+              )}
+              <ul>
+                <li>
+                  <b>Full-Stack Development</b> – Leading React.js frontend
+                  delivery while building scalable Golang backend services,
+                  ensuring high-performance interfaces and reliable API
+                  architectures.
+                </li>
+                <li>
+                  <b>Code Quality & Testing</b> – Elevating engineering
+                  standards through comprehensive unit tests, continuous
+                  reviews, and best practices, resulting in a 10% rise in code
+                  coverage and stronger release stability.
+                </li>
+                <li>
+                  <b>Deployment & DevOps Integration</b> – Managing CI/CD
+                  pipelines, OpenShift environments, production rollouts, and
+                  coordinating with DevOps teams to treamline
+                  development-to-deployment workflows
+                </li>
+                <li>
+                  <b>Open Source & Performance Optimization</b> – Customizing
+                  the Red Hat console project while optimizing system
+                  performance, user workflows, and operational efficiency across
+                  feature sets.
+                </li>
+                <li>
+                  <b>AI & Platform Intelligence</b> – Increased team
+                  productivity by 40% by implementing ChatGPT Enterprise, Custom
+                  AI Agents, GitHub Copilot, and advanced prompt-engineering to
+                  automate unit test creation, accelerate pull-request reviews,
+                  streamline documentation, improve code-flow comprehension, and
+                  drive team-wide adoption of AI-assisted development practices.
+                </li>
+              </ul>
+              {ExperienceHeader(
                 "https://www.linkedin.com/company/knexus",
                 "Knexus",
                 "Gurugram (Remote), India | Jan 2022 – Feb 2025",
-                "Senior Lead Full Stack Engineer (Head of Development & DevOps)"
+                "Senior Lead Full Stack Engineer (Head of Development & DevOps)",
               )}
               <ul>
                 <li>
@@ -151,7 +191,7 @@ export default function Home() {
                 "https://www.linkedin.com/company/knexus",
                 "Knexus",
                 "Gurugram, India | Feb 2016 – Dec 2021",
-                "Lead Developer"
+                "Lead Developer",
               )}
               <ul>
                 <li>
@@ -172,7 +212,7 @@ export default function Home() {
                 "https://www.linkedin.com/company/knexus",
                 "Knexus",
                 "Gurugram, India | Jun 2014 – Jan 2016",
-                "Senior Development Engineer"
+                "Senior Development Engineer",
               )}
               <ul>
                 <li>
@@ -193,7 +233,7 @@ export default function Home() {
                 "https://www.linkedin.com/company/digitasin/",
                 "DigitasLBi",
                 "Gurugram, India | Jun 2012 – May 2014",
-                "Software Developer"
+                "Software Developer",
               )}
               <ul>
                 <li>
@@ -218,7 +258,7 @@ export default function Home() {
                 "https://www.linkedin.com/company/alethia-education-services/about/",
                 "Alethia Education Services",
                 "Gurugram, India | Dec 2009 – Jun 2012",
-                "IT Executive"
+                "IT Executive",
               )}
               <ul>
                 <li>

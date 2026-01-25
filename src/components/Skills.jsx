@@ -51,6 +51,7 @@ import {
   SiRedisHex,
   SiApachecouchdb,
   SiApachecouchdbHex,
+  SiGo,SiGoHex
 } from "@icons-pack/react-simple-icons";
 import * as Icons from "@/components/Icons";
 export const skills = {
@@ -78,6 +79,7 @@ export const skills = {
   ],
   Backend: [
     { name: "NodeJS", icon: <SiNodedotjs color={SiNodedotjsHex} /> },
+    { name: "Golang", icon: <SiGo color={SiGoHex} /> },
     { name: "PHP", icon: <SiPhp color={SiPhpHex} /> },
     { name: "Python", icon: <SiPython color={SiPythonHex} /> },
     { name: "Symfony", icon: <SiSymfony color={SiSymfonyHex} /> },
