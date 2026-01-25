@@ -20,8 +20,8 @@ export interface Company {
 const projectsList: Company[] = [
   {
     company_name: "Knexus",
-    url: "https://www.knexusai.com/",
-    logo: "https://d3qy1pxzcopg5z.cloudfront.net/wp-content/uploads/2021/01/15112406/knexus-full-000-3-01.png",
+    url: "",
+    logo: "/knexus_logo.jpeg",
     linkedIn: "https://www.linkedin.com/company/knexus/",
     projects: [
       {
