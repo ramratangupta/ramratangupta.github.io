@@ -13,6 +13,6 @@ export const SOCIAL_LINKS = {
   LEETCODE:"https://leetcode.com/u/ramratangupta/",
   CONTACT: {
     EMAIL: "ramratan.gupta@gmail.com",
-    PHONE: "9313583357",
+    PHONE: "7701983357",
   },
 } as const;
