@@ -73,7 +73,7 @@ const Footer = () => {
                 <a href={SOCIAL_LINKS.X} target="_blank" title="X">
                   <i className="bi bi-twitter-x"></i>
                 </a>
-                <a href={SOCIAL_LINKS.X} target="_blank" title="Stack Overflow">
+                <a href={SOCIAL_LINKS.STACKOVERFLOW} target="_blank" title="Stack Overflow">
                   <i className="bi bi-stack-overflow"></i>
                 </a>
                 <a href={SOCIAL_LINKS.GITHUB} target="_blank" title="Github">
