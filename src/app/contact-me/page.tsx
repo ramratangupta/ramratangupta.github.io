@@ -34,7 +34,7 @@ export default function Home() {
             <div className="col">
               <h1>Scan QR code to download vCard</h1>
               <Image
-                src="/qr-code.svg"
+                src="/QR.png"
                 alt="QR Code"
                 layout="responsive"
                 width={400}

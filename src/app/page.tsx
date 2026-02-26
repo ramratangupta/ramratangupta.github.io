@@ -44,7 +44,7 @@ export default function Home() {
                 Scan QR code to download vCard
               </h4>
               <Image
-                src="/qr-code.svg"
+                src="/QR.png"
                 alt="QR Code"
                 layout="responsive"
                 width={400} 
