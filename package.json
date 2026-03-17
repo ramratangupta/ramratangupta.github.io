@@ -14,7 +14,7 @@
     "@next/third-parties": "^16.1.6",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "next": "^16.1.5",
+    "next": "^16.1.7",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0"
