@@ -1,187 +1,69 @@
+"use client";
 import {
-  SiReact,
-  SiReactHex,
-  SiNextdotjs,
-  SiNextdotjsHex,
-  SiJavascript,
-  SiJavascriptHex,
-  SiHtml5,
-  SiHtml5Hex,
-  SiCss,
-  SiCssHex,
-  SiBootstrap,
-  SiBootstrapHex,
-  SiNodedotjs,
-  SiNodedotjsHex,
-  SiPhp,
-  SiPhpHex,
-  SiPython,
-  SiPythonHex,
-  SiSymfony,
-  SiSymfonyHex,
-  SiAmazonwebservices,
-  SiAmazonwebservicesHex,
-  SiAmazonec2,
-  SiAmazonec2Hex,
-  SiAwselasticloadbalancing,
-  SiAwselasticloadbalancingHex,
-  SiAwslambda,
-  SiAwslambdaHex,
-  SiAmazonsqs,
-  SiAmazonsqsHex,
-  SiAmazons3,
-  SiAmazons3Hex,
-  SiAmazoniam,
-  SiAmazoniamHex,
-  SiGooglegemini,
-  SiGooglegeminiHex,
-  SiAmazoncloudwatch,
-  SiAmazoncloudwatchHex,
-  SiAmazonroute53,
-  SiAmazonroute53Hex,
-  SiAmazonsimpleemailservice,
-  SiAmazonsimpleemailserviceHex,
-  SiMysql,
-  SiMysqlHex,
-  SiElasticsearch,
-  SiElasticsearchHex,
-  SiAmazondynamodb,
-  SiAmazondynamodbHex,
-  SiRedis,
-  SiRedisHex,
-  SiApachecouchdb,
-  SiApachecouchdbHex,
-  SiGo,SiGoHex
+  SiReact, SiReactHex, SiNextdotjs, SiNextdotjsHex,
+  SiJavascript, SiJavascriptHex, SiHtml5, SiHtml5Hex,
+  SiCss, SiCssHex, SiBootstrap, SiBootstrapHex,
+  SiNodedotjs, SiNodedotjsHex, SiPhp, SiPhpHex,
+  SiPython, SiPythonHex, SiSymfony, SiSymfonyHex,
+  SiAmazonwebservices, SiAmazonwebservicesHex,
+  SiAmazonec2, SiAmazonec2Hex,
+  SiAwselasticloadbalancing, SiAwselasticloadbalancingHex,
+  SiAwslambda, SiAwslambdaHex,
+  SiAmazonsqs, SiAmazonsqsHex,
+  SiAmazons3, SiAmazons3Hex,
+  SiAmazoniam, SiAmazoniamHex,
+  SiGooglegemini, SiGooglegeminiHex,
+  SiAmazoncloudwatch, SiAmazoncloudwatchHex,
+  SiAmazonroute53, SiAmazonroute53Hex,
+  SiAmazonsimpleemailservice, SiAmazonsimpleemailserviceHex,
+  SiMysql, SiMysqlHex,
+  SiElasticsearch, SiElasticsearchHex,
+  SiAmazondynamodb, SiAmazondynamodbHex,
+  SiRedis, SiRedisHex,
+  SiApachecouchdb, SiApachecouchdbHex,
+  SiGo, SiGoHex,
 } from "@icons-pack/react-simple-icons";
 import * as Icons from "@/components/Icons";
-export const skills = {
-  Frontend: [
-    { name: "ReactJS", icon: <SiReact color={SiReactHex} /> },
-    { name: "NextJS", icon: <SiNextdotjs color={SiNextdotjsHex} /> },
-    { name: "JavaScript", icon: <SiJavascript color={SiJavascriptHex} /> },
-    { name: "HTML", icon: <SiHtml5 color={SiHtml5Hex} /> },
-    { name: "CSS", icon: <SiCss color={SiCssHex} /> },
-    { name: "Bootstrap", icon: <SiBootstrap color={SiBootstrapHex} /> },
-  ],
+import { skills } from "@/constants";
 
-  Databases: [
-    { name: "MySQL - AWS RDS", icon: <SiMysql color={SiMysqlHex} /> },
-    {
-      name: "Elastic Search - AWS Open Search",
-      icon: <SiElasticsearch color={SiElasticsearchHex} />,
-    },
-    {
-      name: "AWS Dynamo DB",
-      icon: <SiAmazondynamodb color={SiAmazondynamodbHex} />,
-    },
-    { name: "Redis", icon: <SiRedis color={SiRedisHex} /> },
-    { name: "Couch DB", icon: <SiApachecouchdb color={SiApachecouchdbHex} /> },
-  ],
-  Backend: [
-    { name: "NodeJS", icon: <SiNodedotjs color={SiNodedotjsHex} /> },
-    { name: "Golang", icon: <SiGo color={SiGoHex} /> },
-    { name: "PHP", icon: <SiPhp color={SiPhpHex} /> },
-    { name: "Python", icon: <SiPython color={SiPythonHex} /> },
-    { name: "Symfony", icon: <SiSymfony color={SiSymfonyHex} /> },
-  ],
-  AI: [
-    {
-      name: "Google Gemini",
-      icon: <SiGooglegemini color={SiGooglegeminiHex} />,
-    },
-    {
-      name: "Amazon Q",
-      icon: <Icons.AmazonQ />,
-    },
-    {
-      name: "GenAI",
-      icon: null,
-    },
-    {
-      name: "Prompt Engineering",
-      icon: null,
-    },
-    {
-      name: "Amazon Transcribe",
-      icon: <Icons.AmazonTranscribe />,
-    },
-  ],
-  Cloud: [
-    {
-      name: "AWS",
-      icon: <SiAmazonwebservices color={SiAmazonwebservicesHex} />,
-    },
-    {
-      name: "EC2",
-      icon: <SiAmazonec2 color={SiAmazonec2Hex} />,
-    },
-    {
-      name: "AWS Elastic Load Balancing",
-      icon: <SiAwselasticloadbalancing color={SiAwselasticloadbalancingHex} />,
-    },
-    {
-      name: "Lambda",
-      icon: <SiAwslambda color={SiAwslambdaHex} />,
-    },
-    {
-      name: "Cloud Formation",
-      icon: <Icons.CloudFormation />,
-    },
-    {
-      name: "Virtual Private Cloud",
-      icon: <Icons.VPC />,
-    },
-    {
-      name: "AWS Route 53",
-      icon: <SiAmazonroute53 color={SiAmazonroute53Hex} />,
-    },
-    {
-      name: "Global Accelerator",
-      icon: <Icons.GlobalAccelerator />,
-    },
-    {
-      name: "SQS - Simple Queue Service",
-      icon: <SiAmazonsqs color={SiAmazonsqsHex} />,
-    },
-    {
-      name: "SNS - Simple Notification Service",
-      icon: <Icons.SNS />,
-    },
-    {
-      name: "SES - Simple Email Service",
-      icon: (
-        <SiAmazonsimpleemailservice color={SiAmazonsimpleemailserviceHex} />
-      ),
-    },
-    {
-      name: "Cloud Watch",
-      icon: <SiAmazoncloudwatch color={SiAmazoncloudwatchHex} />,
-    },
-    {
-      name: "Cloud Trail",
-      icon: <Icons.CloudTrail />,
-    },
-    {
-      name: "S3 - Simple Storage Service",
-      icon: <SiAmazons3 color={SiAmazons3Hex} />,
-    },
-    {
-      name: "CloudFront - CDN",
-      icon: <Icons.CloudFront />,
-    },
-    {
-      name: "IAM - Identity and Access Management",
-      icon: <SiAmazoniam color={SiAmazoniamHex} />,
-    },
-    {
-      name: "WAF - Web Application Firewall",
-      icon: <Icons.WAF />,
-    },
-    {
-      name: "AWS Inspector",
-      icon: <Icons.AWSInspector />,
-    },
-  ],
+const iconMap = {
+  SiReact: <SiReact color={SiReactHex} />,
+  SiNextdotjs: <SiNextdotjs color={SiNextdotjsHex} />,
+  SiJavascript: <SiJavascript color={SiJavascriptHex} />,
+  SiHtml5: <SiHtml5 color={SiHtml5Hex} />,
+  SiCss: <SiCss color={SiCssHex} />,
+  SiBootstrap: <SiBootstrap color={SiBootstrapHex} />,
+  SiNodedotjs: <SiNodedotjs color={SiNodedotjsHex} />,
+  SiGo: <SiGo color={SiGoHex} />,
+  SiPhp: <SiPhp color={SiPhpHex} />,
+  SiPython: <SiPython color={SiPythonHex} />,
+  SiSymfony: <SiSymfony color={SiSymfonyHex} />,
+  SiMysql: <SiMysql color={SiMysqlHex} />,
+  SiElasticsearch: <SiElasticsearch color={SiElasticsearchHex} />,
+  SiAmazondynamodb: <SiAmazondynamodb color={SiAmazondynamodbHex} />,
+  SiRedis: <SiRedis color={SiRedisHex} />,
+  SiApachecouchdb: <SiApachecouchdb color={SiApachecouchdbHex} />,
+  SiAmazonwebservices: <SiAmazonwebservices color={SiAmazonwebservicesHex} />,
+  SiAmazonec2: <SiAmazonec2 color={SiAmazonec2Hex} />,
+  SiAwselasticloadbalancing: <SiAwselasticloadbalancing color={SiAwselasticloadbalancingHex} />,
+  SiAwslambda: <SiAwslambda color={SiAwslambdaHex} />,
+  SiAmazonsqs: <SiAmazonsqs color={SiAmazonsqsHex} />,
+  SiAmazons3: <SiAmazons3 color={SiAmazons3Hex} />,
+  SiAmazoniam: <SiAmazoniam color={SiAmazoniamHex} />,
+  SiGooglegemini: <SiGooglegemini color={SiGooglegeminiHex} />,
+  SiAmazoncloudwatch: <SiAmazoncloudwatch color={SiAmazoncloudwatchHex} />,
+  SiAmazonroute53: <SiAmazonroute53 color={SiAmazonroute53Hex} />,
+  SiAmazonsimpleemailservice: <SiAmazonsimpleemailservice color={SiAmazonsimpleemailserviceHex} />,
+  CloudFormation: <Icons.CloudFormation />,
+  VPC: <Icons.VPC />,
+  GlobalAccelerator: <Icons.GlobalAccelerator />,
+  SNS: <Icons.SNS />,
+  CloudTrail: <Icons.CloudTrail />,
+  CloudFront: <Icons.CloudFront />,
+  WAF: <Icons.WAF />,
+  AWSInspector: <Icons.AWSInspector />,
+  AmazonQ: <Icons.AmazonQ />,
+  AmazonTranscribe: <Icons.AmazonTranscribe />,
 };
 
 const Skills = () => {
@@ -194,7 +76,7 @@ const Skills = () => {
           <ul className="list-group">
             {skillList.map((skill) => (
               <li className="list-group-item" key={skill.name}>
-                {skill.icon} {skill.name}
+                {skill.iconKey ? iconMap[skill.iconKey] : null} {skill.name}
               </li>
             ))}
           </ul>

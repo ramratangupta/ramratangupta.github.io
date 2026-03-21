@@ -5,6 +5,58 @@ export const SITE_CONFIG = {
   Description:"Portfolio Ramratan Gupta : 15+ years of experience in Full Stack Development, AWS Services, Project Execution, Migrations, Operations, and Client Engagement."
 } as const;
 
+export const skills: Record<string, { name: string; iconKey?: string }[]> = {
+  Frontend: [
+    { name: "ReactJS", iconKey: "SiReact" },
+    { name: "NextJS", iconKey: "SiNextdotjs" },
+    { name: "JavaScript", iconKey: "SiJavascript" },
+    { name: "HTML", iconKey: "SiHtml5" },
+    { name: "CSS", iconKey: "SiCss" },
+    { name: "Bootstrap", iconKey: "SiBootstrap" },
+  ],
+  Databases: [
+    { name: "MySQL - AWS RDS", iconKey: "SiMysql" },
+    { name: "Elastic Search - AWS Open Search", iconKey: "SiElasticsearch" },
+    { name: "AWS Dynamo DB", iconKey: "SiAmazondynamodb" },
+    { name: "Redis", iconKey: "SiRedis" },
+    { name: "Couch DB", iconKey: "SiApachecouchdb" },
+  ],
+  Backend: [
+    { name: "NodeJS", iconKey: "SiNodedotjs" },
+    { name: "Golang", iconKey: "SiGo" },
+    { name: "PHP", iconKey: "SiPhp" },
+    { name: "Python", iconKey: "SiPython" },
+    { name: "Symfony", iconKey: "SiSymfony" },
+  ],
+  AI: [
+    { name: "Google Gemini", iconKey: "SiGooglegemini" },
+    { name: "Amazon Q", iconKey: "AmazonQ" },
+    { name: "GenAI" },
+    { name: "Prompt Engineering" },
+    { name: "Amazon Transcribe", iconKey: "AmazonTranscribe" },
+  ],
+  Cloud: [
+    { name: "AWS", iconKey: "SiAmazonwebservices" },
+    { name: "EC2", iconKey: "SiAmazonec2" },
+    { name: "AWS Elastic Load Balancing", iconKey: "SiAwselasticloadbalancing" },
+    { name: "Lambda", iconKey: "SiAwslambda" },
+    { name: "Cloud Formation", iconKey: "CloudFormation" },
+    { name: "Virtual Private Cloud", iconKey: "VPC" },
+    { name: "AWS Route 53", iconKey: "SiAmazonroute53" },
+    { name: "Global Accelerator", iconKey: "GlobalAccelerator" },
+    { name: "SQS - Simple Queue Service", iconKey: "SiAmazonsqs" },
+    { name: "SNS - Simple Notification Service", iconKey: "SNS" },
+    { name: "SES - Simple Email Service", iconKey: "SiAmazonsimpleemailservice" },
+    { name: "Cloud Watch", iconKey: "SiAmazoncloudwatch" },
+    { name: "Cloud Trail", iconKey: "CloudTrail" },
+    { name: "S3 - Simple Storage Service", iconKey: "SiAmazons3" },
+    { name: "CloudFront - CDN", iconKey: "CloudFront" },
+    { name: "IAM - Identity and Access Management", iconKey: "SiAmazoniam" },
+    { name: "WAF - Web Application Firewall", iconKey: "WAF" },
+    { name: "AWS Inspector", iconKey: "AWSInspector" },
+  ],
+};
+
 export const SOCIAL_LINKS = {
   GITHUB: "https://github.com/ramratangupta",
   X: "https://x.com/ramratangupta",
