@@ -44,13 +44,13 @@ A React-based application to fetch and summarize tender data with modern tooling
 An experimental GenAI project to create structured learning sessions based on Bhagavad Gita for different age groups.
 
 **Key Highlights:**
-- Created prompt for guided sessions (kids & teens)  
+- Created prompts for guided sessions (kids & teens)  
 - Built structured flow: Relaxation → Story → Meaning → Reflection → Quiz  
 - Applied multi lingual prompt engineering for contextual understanding  
 - Validated through real-world usage
 - Focused on engagement, clarity, and emotional connection  
 
-🔗 Code: [Promts](https://github.com/ramratangupta/genai-dsa-mastery-notes-and-projects/tree/main/projects/gita_explainer)
+🔗 Code: [Prompts](https://github.com/ramratangupta/genai-dsa-mastery-notes-and-projects/tree/main/projects/gita_explainer)
 
 🔗 [Gitopdesh Chat Bot for Age 5–15 Hindi Version](https://gemini.google.com/gem/cf46b4650e89?usp=sharing)
 
