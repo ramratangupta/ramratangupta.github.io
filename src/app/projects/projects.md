@@ -53,7 +53,4 @@ MySQL RDS Database Import and Export automation
 create_NAT_gatewayforQA.sh
 delete_NAT_gatewayforQA.sh
 saas_tags_server.sh
-
-Freelance Projets
-https://amysussglobaleducation.com/
 TimesJobs	Fuel your Success	Facebook App	PHP, MYSQL, Facebook API, Image GD	A thank giving FB app with certificate genration and making it viral via uploading on FB.
