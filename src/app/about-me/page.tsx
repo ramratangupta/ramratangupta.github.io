@@ -93,36 +93,20 @@ export default function Home() {
               )}
               <ul>
                 <li>
-                  <b>Full-Stack Development</b> – Leading React.js frontend
-                  delivery while building scalable Golang backend services,
-                  ensuring high-performance interfaces and reliable API
-                  architectures.
+                  Leading React.js frontend open source customization with golnag for the backend the frondend as proxy
                 </li>
                 <li>
-                  <b>Code Quality & Testing</b> – Elevating engineering
-                  standards through comprehensive unit tests, continuous
-                  reviews, and best practices, resulting in a 10% rise in code
+                  <b>Code Quality & Testing</b>Contributed in a 25% rise in code
                   coverage and stronger release stability.
                 </li>
                 <li>
-                  <b>Deployment & DevOps Integration</b> – Managing CI/CD
-                  pipelines, OpenShift environments, production rollouts, and
-                  coordinating with DevOps teams to treamline
-                  development-to-deployment workflows
+                  <b>Deployment & DevOps Integration</b> Lead release for fronend microservices
                 </li>
                 <li>
-                  <b>Open Source & Performance Optimization</b> – Customizing
-                  the Red Hat console project while optimizing system
-                  performance, user workflows, and operational efficiency across
-                  feature sets.
+                 Active use of GenAI tools like ChatGPT and Github Copilot for code generation, debugging, and optimizing development workflows, resulting in a 30% increase in productivity.
                 </li>
                 <li>
-                  <b>AI & Platform Intelligence</b> – Increased team
-                  productivity by 40% by implementing ChatGPT Enterprise, Custom
-                  AI Agents, GitHub Copilot, and advanced prompt-engineering to
-                  automate unit test creation, accelerate pull-request reviews,
-                  streamline documentation, improve code-flow comprehension, and
-                  drive team-wide adoption of AI-assisted development practices.
+                  Vulneriblity management and security hardening for frontend microservices
                 </li>
               </ul>
               {ExperienceHeader(
