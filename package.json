@@ -13,7 +13,7 @@
     "@icons-pack/react-simple-icons": "^12.3.0",
     "@next/third-parties": "^16.1.6",
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
+    "bootstrap-icons": "1.11.3",
     "next": "^16.2.12",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
